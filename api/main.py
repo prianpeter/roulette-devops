@@ -8,8 +8,7 @@ class RouletteHistory(BaseModel):
 
 @app.get("/health")
 def health():
-    # BUG INTENTIONNEL : renvoie DOWN au lieu de UP
-    return {"status": "DOWN"}
+    return {"status": "UP"}
 
 @app.post("/predict")
 def predict(data: RouletteHistory):
