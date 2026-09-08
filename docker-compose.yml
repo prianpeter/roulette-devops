@@ -1,7 +1,7 @@
 services:
   api-prediction:
-    build: ./api
-    container_name: roulette_api
+    image: ghcr.io/prianpeter/roulette-devops/api:latest
+    container_name: roulette-api-prod
+    restart: always
     ports:
       - "8000:8000"
-    restart: unless-stopped
