@@ -1,5 +1,6 @@
 services:
   api-prediction:
+    build: ./api
     image: ghcr.io/prianpeter/roulette-devops/api:latest
     container_name: roulette-api-prod
     restart: always
